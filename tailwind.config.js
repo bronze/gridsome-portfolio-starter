@@ -1,3 +1,5 @@
+const { colors } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   theme: {
     extend: {
@@ -34,7 +36,7 @@ module.exports = {
 
       black: '#000',
       white: '#fff',
-
+      red: colors.red,
       green: {
         100: '#f0fff4',
         200: '#c6f6d5',
