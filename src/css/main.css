@@ -114,3 +114,5 @@ nav .active {
   height: 100%;
   border: 0;
 }
+svg#dots-triangle {
+  fill: #c53030;
