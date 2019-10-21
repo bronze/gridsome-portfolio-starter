@@ -84,7 +84,7 @@
           <p class="mb-12">Static sites cannot submit forms on their own. However, services like <a href="https://www.netlify.com/docs/form-handling">Netlify Forms</a> or <a href="https://formspree.io">FormSpree</a> can help you do this without a backend.</p>
 
           <div class="text-lg sm:text-lg mb-16">
-            <form class="mb-12" id="contact" v-on:submit.prevent="handleSubmit" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form action="#" class="mb-12" id="contact" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
                 <label>
