@@ -37,7 +37,10 @@
   background: #2d3748;
 }
 
-@media (prefers-color-scheme: dark),
+/* https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode */
+@media (prefers-color-scheme: dark) {
+}
+
 .theme-dark {
   --bg-background-primary: #0D2438;
   --bg-background-secondary: #102C44;
