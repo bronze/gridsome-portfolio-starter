@@ -147,15 +147,15 @@
 </template>
 
 <script>
-export default {
-  $("#contact").submit(function(e) {
-    e.preventDefault();
+$("#my-form").submit(function(e) {
+  e.preventDefault();
 
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function() {
-      alert("Thank you!");
-    });
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
   });
+});
+export default {
   metaInfo: {
     title: 'Home'
   }
