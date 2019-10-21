@@ -16,8 +16,8 @@ export default {
   methods: {
     toggleTheme() {
       const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      localStorage.setItem('theme', theme-dark)
-      this.$emit('themeChanged', theme-dark)
+      localStorage.setItem('theme', 'theme-dark')
+      this.$emit('themeChanged', 'theme-dark')
       
       const newTheme = this.theme === 'theme-light' ? 'theme-dark' : 'theme-light'
       localStorage.setItem('theme', newTheme)
