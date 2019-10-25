@@ -113,6 +113,11 @@ export default {
     ThemeSwitcher
   },
   mounted() {
+    if(matchMedia('(prefers-color-scheme: dark)').matches) {
+     /* your dark mode code */
+      localStorage.setItem('theme', 'theme-dark'),
+      console.log("theme: "+localStorage.theme)
+    }
     this.theme = localStorage.getItem('theme') || 'theme-light'
   },
   data() {
