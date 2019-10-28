@@ -112,6 +112,9 @@ export default {
     SearchInput,
     ThemeSwitcher
   },
+  mounted() {
+    this.theme = localStorage.getItem('theme') || 'light'
+  },
   data() {
     return {
       isOpen: false,
