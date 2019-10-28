@@ -15,10 +15,19 @@ export default {
   },
   methods: {
     toggleTheme() {
-      const newTheme = this.theme === 'theme-light' ? 'theme-dark' : 'theme-light'
+      const newTheme = this.theme === 'light' ? 'dark' : 'light'
       localStorage.setItem('theme', newTheme)
       this.$emit('themeChanged', newTheme)
+      
+      
+      // This is using a script that is added in index.html
+      window.__setPreferredTheme(
+        this.darkTheme ? 'dark' : 'light'
+      )
     }
+  },
+  mounted() {
+    if (window.__theme == 'dark') this.darkTheme = true
   }
 }
 </script>
