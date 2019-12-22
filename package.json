@@ -1,5 +1,5 @@
 {
-  "name": "andremadarang",
+  "name": "bronze",
   "private": true,
   "scripts": {
     "build": "gridsome build",
