@@ -67,7 +67,7 @@
         </div>
 
         <div class="responsive-container">
-          <iframe class="responsive-iframe w-full h-full top-0 left-0 border-0" src="https://www.youtube.com/embed/uHo6o1TNQeE" style="border:0;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          youtube was here
         </div>
       </div> <!-- end get-to-know me -->
     </div>
@@ -155,7 +155,7 @@
 <script>
 // $("#contact").submit(function(e) {
 //   e.preventDefault();
-// 
+//
 //   var $form = $(this);
 //   $.post($form.attr("action"), $form.serialize()).then(function() {
 //     alert("Thank you!");
@@ -167,4 +167,3 @@ export default {
   }
 }
 </script>
-
