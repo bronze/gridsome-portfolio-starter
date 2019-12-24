@@ -12,8 +12,18 @@ export default {
       darkTheme: false
     }
   },
+  props: {
+    theme: {
+      type: String,
+      required: true,
+    }
+  },
   methods: {
     toggleTheme() {
+      const newTheme = this.theme === 'light' ? 'dark' : 'light'
+      localStorage.setItem('theme', newTheme)
+      this.$emit('themeChanged', newTheme)
+
       this.darkTheme = !this.darkTheme
 
       // This is using a script that is added in index.html

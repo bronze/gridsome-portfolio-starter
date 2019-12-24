@@ -13,6 +13,7 @@
           preferredTheme = newTheme;
           document.body.setAttribute('data-theme', newTheme);
           window.__onThemeChange(newTheme);
+          localStorage.setItem('theme', newTheme)
         }
 
         var preferredTheme;
@@ -24,6 +25,7 @@
           setTheme(newTheme);
           try {
             localStorage.setItem('theme', newTheme);
+            this.$emit('themeChanged', newTheme);
           } catch (err) {}
         }
 
