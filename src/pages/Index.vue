@@ -65,10 +65,6 @@
           <div><g-image src="../../static/avatar.jpg" alt="avatar" class="w-32 h-32 rounded-full mb-8 lg:mb-0" /></div>
           <div class="flex-1 text-lg sm:text-xl ml-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quae architecto minus molestias iusto ducimus fuga quo quia libero dignissimos, fugiat modi assumenda debitis laboriosam.</div>
         </div>
-
-        <div class="responsive-container">
-          youtube was here
-        </div>
       </div> <!-- end get-to-know me -->
     </div>
 

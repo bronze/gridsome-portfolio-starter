@@ -33,8 +33,6 @@ export default function (Vue, { router, head, isClient }) {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700'
+    href: 'https://fonts.googleapis.com/css?family=Robot:400,700&display=swap'
   })
 }
-
-
