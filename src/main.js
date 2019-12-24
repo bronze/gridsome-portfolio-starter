@@ -31,8 +31,8 @@ export default function (Vue, { router, head, isClient }) {
     content: 'Andre Madarang'
   })
 
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Robot:400,700&display=swap'
-  })
+  // head.link.push({
+  //   rel: 'stylesheet',
+  //   href: 'https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap'
+  // })
 }
