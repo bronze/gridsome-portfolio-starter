@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.theme-light {
+:root {
   --bg-background-primary: white;
   --bg-background-secondary: #f7fafc;
   --bg-background-tertiary: #e2e8f0;
@@ -15,31 +15,11 @@
   --border-border-color-primary: white;
 }
 
-.theme-light .search-highlighted {
-  background: #f0fff4;
-}
-
-.theme-light .search-hover:hover {
-  background: #f0fff4;
-}
-
-.theme-dark .markdown-body {
-    color: #24292e;
-}
-
-.theme-dark .search-highlighted {
-  background: #2d3748;
-}
-
-.theme-dark .search-hover:hover {
-  background: #2d3748;
-}
-
 /* https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode */
 @media (prefers-color-scheme: dark) {
 }
-
-.theme-dark {
+/* https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
+[data-theme="dark"] {
   --bg-background-primary: #0D2438;
   --bg-background-secondary: #102C44;
   --bg-background-tertiary: #1E3951;
@@ -52,7 +32,27 @@
   --border-border-color-primary:  #1a202c;
 }
 
-.theme-dark .markdown-body {
+.search-highlighted {
+  background: #f0fff4;
+}
+
+.search-hover:hover {
+  background: #f0fff4;
+}
+
+.markdown-body {
+    color: #24292e;
+}
+
+[data-theme="dark"] .search-highlighted {
+  background: #2d3748;
+}
+
+[data-theme="dark"] .search-hover:hover {
+  background: #2d3748;
+}
+
+[data-theme="dark"] .markdown-body {
     color: #cbd5e0;
 }
 
